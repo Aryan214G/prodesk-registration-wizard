@@ -77,17 +77,15 @@ button {
 
     position: absolute;
 
-    top: 18px;
+    top: 20px;
 
-    left: 10%;
+    left: 25px;
 
-    width: 80%;
+    right: 25px;
 
     height: 4px;
 
-    background-color: #cfcfcf;
-
-    z-index: 0;
+    background-color: #d3d3d3;
 }
 
 .steps {
