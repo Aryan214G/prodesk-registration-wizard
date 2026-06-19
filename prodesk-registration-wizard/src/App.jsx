@@ -4,6 +4,7 @@ import "./App.css";
 import StepOne from "./components/StepOne"
 import StepTwo from "./components/StepTwo"
 import StepThree from './components/StepThree';
+import ProgressBar from './components/ProgressBar';
 
 const App = () => {
 
@@ -22,29 +23,32 @@ const App = () => {
   return (
     <div>
 
-      {step === 1 && 
-      (
-        <StepOne 
-          formData = {formData}
-          setFormData = {setFormData}
-          setStep = {setStep}
-        />
-      )}
+      <ProgressBar
+        step={step} />
+      
+      {step === 1 &&
+        (
+          <StepOne
+            formData={formData}
+            setFormData={setFormData}
+            setStep={setStep}
+          />
+        )}
 
       {step === 2 && (
 
         <StepTwo
-            formData={formData}
-            setFormData={setFormData}
-            setStep={setStep}
+          formData={formData}
+          setFormData={setFormData}
+          setStep={setStep}
         />
       )}
 
       {step === 3 && (
 
         <StepThree
-            formData={formData}
-            setStep={setStep}
+          formData={formData}
+          setStep={setStep}
         />
       )}
 

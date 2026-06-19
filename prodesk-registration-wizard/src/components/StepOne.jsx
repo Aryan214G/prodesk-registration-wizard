@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import ProgressBar from './ProgressBar';
 const StepOne = (props) => {
 
     const { formData, setFormData, setStep } = props;
@@ -8,6 +9,7 @@ const StepOne = (props) => {
 
     return (
         <div>
+            <ProgressBar/>
             <h1>Personal Info</h1>
 
             <div className='card'>
