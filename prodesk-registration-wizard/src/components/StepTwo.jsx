@@ -20,7 +20,11 @@ const passwordMatch = formData.password === formData.confirmPassword;
             className='input-label-pair'>
                 
             <p>Email</p>
-            <input
+            <input  className={emailValid
+                ? ""
+                : "field-error"
+            }
+
             type='text'
             placeholder='Enter email'
             value={formData.email}
@@ -37,6 +41,10 @@ const passwordMatch = formData.password === formData.confirmPassword;
 
                 <p>Password</p>
             <input
+            className={passwordValid
+                ? ""
+                : "field-error"
+            }
             type='text'
             placeholder='Enter password'
             value={formData.password}
@@ -53,6 +61,10 @@ const passwordMatch = formData.password === formData.confirmPassword;
 
                 <p>Confirm password</p>
             <input
+            className={passwordMatch
+                ? ""
+                : "field-error"
+            }
             type='text'
             placeholder='Confirm password'
             value={formData.confirmPassword}
