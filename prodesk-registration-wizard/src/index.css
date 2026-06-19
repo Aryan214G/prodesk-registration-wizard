@@ -1,3 +1,7 @@
+:root {
+  --text-color: #ffffff;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -6,6 +10,7 @@ body {
     margin: 0;
     font-family: Inter, sans-serif;
     background-color:rgb(39, 37, 46);
+    color: var(--text-color);
 }
 
 a {
