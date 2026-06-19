@@ -9,7 +9,6 @@ const emailValid = formData.email.includes("@");
 const passwordValid = formData.password.length >= 8;
 const passwordMatch = formData.password === formData.confirmPassword;
 
-
   return (
     <div>
         <h1>Account Details</h1>
@@ -107,6 +106,14 @@ const passwordMatch = formData.password === formData.confirmPassword;
         </button>
 
         <button
+        disabled = {
+            !formData.email 
+            || !formData.password
+            || !formData.confirmPassword
+            || !passwordValid
+            || !emailValid
+            || !passwordMatch
+        }
         onClick={(event) => setStep(3)}>
             Next
         </button>
