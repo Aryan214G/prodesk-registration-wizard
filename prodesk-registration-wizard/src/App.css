@@ -8,17 +8,17 @@
 }
 
 .card {
-  background-color: rgb(73, 69, 86);
-  padding: 2rem 1rem;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    background-color: rgb(73, 69, 86);
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 input {
-  padding: 0.75rem 1.25rem;
-  border-radius: 12px;
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
 }
 
 .input-label-pair {
@@ -67,12 +67,12 @@ h1 {
 }
 
 input.field-error {
-  border: 2px solid red;
+    border: 2px solid red;
 }
 
 button {
-  padding: 0.55rem 1.5rem;
-  border-radius: 10px;
+    padding: 0.55rem 1.5rem;
+    border-radius: 10px;
 }
 
 
@@ -89,7 +89,7 @@ button {
 }
 
 .error-text {
-  color: red;
+    color: red;
 }
 
 .password-field {

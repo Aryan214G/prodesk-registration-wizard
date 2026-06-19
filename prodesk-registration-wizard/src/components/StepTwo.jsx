@@ -84,9 +84,9 @@ const StepTwo = (props) => {
                                 )
                             }
                         >
-                            { showPassword
-                            ? <FaEyeSlash/>
-                            : <FaEye/>
+                            {showPassword
+                                ? <FaEyeSlash />
+                                : <FaEye />
                             }
                         </button>
                     </div>
@@ -133,9 +133,9 @@ const StepTwo = (props) => {
                                 )
                             }
                         >
-                            { showConfirmPassword
-                            ? <FaEyeSlash/>
-                            : <FaEye/>
+                            {showConfirmPassword
+                                ? <FaEyeSlash />
+                                : <FaEye />
                             }
                         </button>
                     </div>
@@ -150,23 +150,23 @@ const StepTwo = (props) => {
 
                 <div className="button-group">
 
-                <button
-                    onClick={(event) => setStep(1)}>
-                    Back
-                </button>
+                    <button
+                        onClick={(event) => setStep(1)}>
+                        Back
+                    </button>
 
-                <button
-                    disabled={
-                        !formData.email
-                        || !formData.password
-                        || !formData.confirmPassword
-                        || !passwordValid
-                        || !emailValid
-                        || !passwordMatch
-                    }
-                    onClick={(event) => setStep(3)}>
-                    Next
-                </button>
+                    <button
+                        disabled={
+                            !formData.email
+                            || !formData.password
+                            || !formData.confirmPassword
+                            || !passwordValid
+                            || !emailValid
+                            || !passwordMatch
+                        }
+                        onClick={(event) => setStep(3)}>
+                        Next
+                    </button>
 
                 </div>
             </div>

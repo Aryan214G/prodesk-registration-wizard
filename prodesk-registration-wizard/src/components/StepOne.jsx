@@ -46,9 +46,9 @@ const StepOne = (props) => {
                     />
                 </div>
 
-                    <div className='input-label-pair'>
+                <div className='input-label-pair'>
 
-                <p>Date of birth</p>
+                    <p>Date of birth</p>
                     <input
                         type='text'
                         placeholder='Enter date of birth'
@@ -60,22 +60,22 @@ const StepOne = (props) => {
                             })
                         }
                     />
-                    </div>
+                </div>
 
-                    <button
-                    disabled = {
-                        !formData.firstName 
+                <button
+                    disabled={
+                        !formData.firstName
                         || !formData.lastName
                         || !formData.dob
                     }
-                        onClick={(event) => setStep(2)}
-                    > Next
-                    </button>
-                </div>
-
-
+                    onClick={(event) => setStep(2)}
+                > Next
+                </button>
             </div>
-            )
+
+
+        </div>
+    )
 }
 
-            export default StepOne
+export default StepOne

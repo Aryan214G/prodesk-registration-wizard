@@ -25,7 +25,7 @@ const App = () => {
 
       <ProgressBar
         step={step} />
-      
+
       {step === 1 &&
         (
           <StepOne
