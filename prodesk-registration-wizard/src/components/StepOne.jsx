@@ -64,6 +64,11 @@ const StepOne = (props) => {
                 </div>
 
                 <button
+                disabled = {
+                    !formData.firstName 
+                    || !formData.lastName
+                    || !formData.dob
+                }
                     onClick={(event) => setStep(2)}
                 > Next
                 </button>
