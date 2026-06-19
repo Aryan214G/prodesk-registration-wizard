@@ -148,25 +148,29 @@ const StepTwo = (props) => {
                     )}
                 </div>
 
+                <div className="button-group">
+
+                <button
+                    onClick={(event) => setStep(1)}>
+                    Back
+                </button>
+
+                <button
+                    disabled={
+                        !formData.email
+                        || !formData.password
+                        || !formData.confirmPassword
+                        || !passwordValid
+                        || !emailValid
+                        || !passwordMatch
+                    }
+                    onClick={(event) => setStep(3)}>
+                    Next
+                </button>
+
+                </div>
             </div>
 
-            <button
-                onClick={(event) => setStep(1)}>
-                Back
-            </button>
-
-            <button
-                disabled={
-                    !formData.email
-                    || !formData.password
-                    || !formData.confirmPassword
-                    || !passwordValid
-                    || !emailValid
-                    || !passwordMatch
-                }
-                onClick={(event) => setStep(3)}>
-                Next
-            </button>
         </div>
     )
 }

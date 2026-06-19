@@ -21,12 +21,71 @@ input {
   border-radius: 12px;
 }
 
+.input-label-pair {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    width: 400px;
+}
+
+.input-label-pair input {
+
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+.card {
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    background-color: rgb(73, 69, 86);
+
+    padding: 2rem;
+
+    border-radius: 1rem;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    gap: 24px;
+}
+
+h1 {
+
+    text-align: center;
+
+    margin-bottom: 2rem;
+}
+
 input.field-error {
   border: 2px solid red;
 }
+
 button {
   padding: 0.55rem 1.5rem;
   border-radius: 10px;
+}
+
+
+
+.button-group {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 16px;
+
+    margin-top: 20px;
 }
 
 .error-text {

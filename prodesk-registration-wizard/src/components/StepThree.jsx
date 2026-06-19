@@ -36,17 +36,20 @@ const StepThree = ({formData, setStep}) => {
                 <p>Password: {formData.password}</p>
             </div>
 
+            <div className='button-group'>
+            <button 
+            onClick={(event) => setStep(2)}>
+                Back
+            </button>
+
+            <button 
+            onClick={handleSubmit}>
+                {buttonText}
+            </button>
+
+            </div>
         </div>
 
-        <button 
-        onClick={(event) => setStep(2)}>
-            Back
-        </button>
-
-        <button 
-        onClick={handleSubmit}>
-            {buttonText}
-        </button>
 
     </div>
   )
