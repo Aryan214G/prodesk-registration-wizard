@@ -7,10 +7,53 @@ const { formData, setFormData, setStep } = props;
 
   return (
     <div>
+        <h1>Account Details</h1>
+
+        <div className='form-card'>
+
+            <input
+            type='text'
+            placeholder='Enter email'
+            value={formData.email}
+            onChange={(event) => 
+                setFormData({
+                    ...formData,
+                    email: event.target.value 
+                })
+            }
+            />
+
+            <input
+            type='text'
+            placeholder='Enter password'
+            value={formData.password}
+            onChange={(event) => 
+                setFormData({
+                    ...formData,
+                    password: event.target.value
+                })
+            }
+            />
+
+            <input
+            type='text'
+            placeholder='Confirm password'
+            value={formData.confirmPassword}
+            onChange={(event) => 
+                setFormData({
+                    ...formData,
+                    confirmPassword: event.target.value
+                })
+            }
+            />
+            
+        </div>
+
         <button
         onClick={(event) => setStep(1)}>
             Back
         </button>
+        
         <button>
             Next
         </button>
