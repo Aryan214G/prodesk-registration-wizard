@@ -16,6 +16,10 @@ const passwordMatch = formData.password === formData.confirmPassword;
 
         <div className='card'>
 
+            <div
+            className='input-label-pair'>
+                
+            <p>Email</p>
             <input
             type='text'
             placeholder='Enter email'
@@ -27,7 +31,11 @@ const passwordMatch = formData.password === formData.confirmPassword;
                 })
             }
             />
+            </div>
 
+            <div className='input-label-pair'>
+
+                <p>Password</p>
             <input
             type='text'
             placeholder='Enter password'
@@ -39,7 +47,11 @@ const passwordMatch = formData.password === formData.confirmPassword;
                 })
             }
             />
+            </div>
 
+            <div className='input-label-pair'>
+
+                <p>Confirm password</p>
             <input
             type='text'
             placeholder='Confirm password'
@@ -51,6 +63,7 @@ const passwordMatch = formData.password === formData.confirmPassword;
                 })
             }
             />
+            </div>
             
         </div>
 
