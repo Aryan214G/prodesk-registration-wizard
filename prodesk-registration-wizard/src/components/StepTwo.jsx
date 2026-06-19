@@ -5,6 +5,11 @@ const StepTwo = (props) => {
 
 const { formData, setFormData, setStep } = props;
 
+const emailValid = formData.email.includes("@");
+const passwordValid = formData.password.length >= 8;
+const passwordMatch = formData.password === formData.confirmPassword;
+
+
   return (
     <div>
         <h1>Account Details</h1>

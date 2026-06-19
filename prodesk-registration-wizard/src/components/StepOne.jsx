@@ -5,9 +5,6 @@ const StepOne = (props) => {
 const { formData, setFormData, setStep } = props;
 const [field1Class, setField1Class] = useState("field");
 
-const emailValid = formData.email.includes("@");
-const passwordValid = formData.password.length >= 8;
-const passwordMatch = formData.password === formData.confirmPassword;
 
   return (
     <div>
