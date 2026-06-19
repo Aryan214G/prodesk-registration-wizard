@@ -28,3 +28,7 @@ button {
   padding: 0.55rem 1.5rem;
   border-radius: 10px;
 }
+
+.error-text {
+  color: red;
+}

@@ -24,4 +24,4 @@ const [fieldClass, setFieldClass] = useState("field");
 
 If I do it this way I will have to make state for each field. Is that the right approach?
 
-6) 
+6) How to disable a button in react?

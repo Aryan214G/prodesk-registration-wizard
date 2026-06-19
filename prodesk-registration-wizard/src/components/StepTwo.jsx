@@ -35,6 +35,14 @@ const passwordMatch = formData.password === formData.confirmPassword;
                 })
             }
             />
+
+            { !emailValid && (
+
+                <p className='error-text'>
+                    Invalid email address.
+                </p>
+            )}
+
             </div>
 
             <div className='input-label-pair'>
@@ -55,6 +63,13 @@ const passwordMatch = formData.password === formData.confirmPassword;
                 })
             }
             />
+
+            { !passwordValid && (
+
+                <p className='error-text'>
+                    Password length should be atleast 8 characters.
+                </p>
+            )}
             </div>
 
             <div className='input-label-pair'>
@@ -75,6 +90,13 @@ const passwordMatch = formData.password === formData.confirmPassword;
                 })
             }
             />
+
+            { !passwordMatch && (
+
+                <p className='error-text'>
+                    Passwords do not match.
+                </p>
+            )}
             </div>
             
         </div>
