@@ -32,3 +32,34 @@ button {
 .error-text {
   color: red;
 }
+
+.password-field {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.password-field input {
+
+    width: 100%;
+
+    padding-right: 45px;
+}
+
+.toggle-password {
+
+    position: absolute;
+
+    right: 10px;
+
+    border: none;
+
+    background: none;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+}
