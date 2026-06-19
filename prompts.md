@@ -14,3 +14,14 @@ const [formData, setFormData] = useState(
 3) How do I change the lable of the submit button from my handleSubmit function?
 
 4) how to set time duration for switching back the button label?
+
+5) I'm thinking of using useState to implement real time field validation.
+
+For example:
+
+const [fieldClass, setFieldClass] = useState("field");
+
+
+If I do it this way I will have to make state for each field. Is that the right approach?
+
+6) 
