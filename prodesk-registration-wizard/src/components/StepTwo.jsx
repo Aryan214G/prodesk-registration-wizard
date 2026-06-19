@@ -9,7 +9,7 @@ const { formData, setFormData, setStep } = props;
     <div>
         <h1>Account Details</h1>
 
-        <div className='form-card'>
+        <div className='card'>
 
             <input
             type='text'
@@ -53,8 +53,9 @@ const { formData, setFormData, setStep } = props;
         onClick={(event) => setStep(1)}>
             Back
         </button>
-        
-        <button>
+
+        <button
+        onClick={(event) => setStep(3)}>
             Next
         </button>
     </div>

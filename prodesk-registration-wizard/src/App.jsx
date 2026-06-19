@@ -3,6 +3,7 @@ import { useState } from 'react';
 import "./App.css";
 import StepOne from "./components/StepOne"
 import StepTwo from "./components/StepTwo"
+import StepThree from './components/StepThree';
 
 const App = () => {
 
@@ -35,6 +36,14 @@ const App = () => {
         <StepTwo
             formData={formData}
             setFormData={setFormData}
+            setStep={setStep}
+        />
+      )}
+
+      {step === 3 && (
+
+        <StepThree
+            formData={formData}
             setStep={setStep}
         />
       )}

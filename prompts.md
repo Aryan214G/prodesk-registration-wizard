@@ -11,4 +11,6 @@ const [formData, setFormData] = useState(
     ]
   )
 
-3) 
+3) How do I change the lable of the submit button from my handleSubmit function?
+
+4) how to set time duration for switching back the button label?

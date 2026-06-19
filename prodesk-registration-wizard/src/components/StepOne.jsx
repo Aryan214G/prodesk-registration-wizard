@@ -8,7 +8,7 @@ const { formData, setFormData, setStep } = props;
     <div>
         <h1>Personal Info</h1>
 
-        <div className='form-card'>
+        <div className='card'>
 
             <input
             type='text'

@@ -6,3 +6,9 @@
 
     padding: 32px;
 }
+
+.card {
+  background-color: rgb(73, 69, 86);
+  padding: 1rem;
+  border-radius: 1rem;
+}
